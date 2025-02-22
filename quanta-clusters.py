@@ -5,8 +5,6 @@ displays them in a Streamlit app.
 
 from collections import defaultdict
 import json
-import os
-import numpy as np
 import streamlit as st
 from streamlit_shortcuts import add_keyboard_shortcuts
 
@@ -95,7 +93,6 @@ if session_key not in st.session_state:
 cluster_idx = st.sidebar.selectbox(
     'Select cluster index',
     options=list(range(int(n_clusters))),
-    index=st.session_state[session_key],
     key=session_key
 )
 
