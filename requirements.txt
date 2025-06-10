@@ -1,1 +1,1 @@
-streamlit-shortcuts==0.3.0
+streamlit-shortcuts==0.3.
